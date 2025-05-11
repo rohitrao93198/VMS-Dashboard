@@ -1,0 +1,173 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "NH-48 Highway",
+      "status": "Active",
+      "statusColor": "success"
+    },
+    {
+      "id": 2,
+      "title": "City Center Deployment",
+      "status": "Active",
+      "statusColor": "success"
+    },
+    {
+      "id": 3,
+      "title": "Eastern Expressway",
+      "status": "Planned",
+      "statusColor": "info"
+    },
+    {
+      "id": 4,
+      "title": "Industrial Zone",
+      "status": "Maintenance",
+      "statusColor": "warning"
+    }
+  ],
+  "metricDefinitions": [
+    {
+      "id": 1,
+      "title": "Total VMS Boards",
+      "type": "total",
+      "icon": "monitor",
+      "changeType": "neutral"
+    },
+    {
+      "id": 2,
+      "title": "Online",
+      "type": "status",
+      "match": "online",
+      "icon": "monitor",
+      "changeType": "increase"
+    },
+    {
+      "id": 3,
+      "title": "Offline",
+      "type": "status",
+      "match": "offline",
+      "icon": "monitor",
+      "changeType": "decrease"
+    },
+    {
+      "id": 4,
+      "title": "Needs Attention",
+      "type": "status-multiple",
+      "matches": ["faulty", "maintenance"],
+      "icon": "alert-triangle",
+      "changeType": "neutral"
+    }
+  ],
+  "vmsDisplays": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "location": "NH-48 Km 23",
+      "status": "Online",
+      "statusColor": "success",
+      "message": "Slow traffic ahead. Expect delays.",
+      "chainage": "CH 23+450",
+      "type": "Fixed",
+      "zone": "North",
+      "lastUpdated": "9:15:00 AM"
+    },
+    {
+      "id": 2,
+      "projectId": 1,
+      "location": "NH-48 Km 45",
+      "status": "Online",
+      "statusColor": "success",
+      "message": "Road work ahead. Speed limit 40km/h",
+      "chainage": "CH 45+200",
+      "type": "Fixed",
+      "zone": "North",
+      "lastUpdated": "8:30:00 AM"
+    },
+    {
+      "id": 3,
+      "projectId": 1,
+      "location": "NH-48 Km 60",
+      "status": "Online",
+      "statusColor": "success",
+      "message": "Fog ahead. Use fog lights.",
+      "chainage": "CH 60+700",
+      "type": "Fixed",
+      "zone": "North",
+      "lastUpdated": "6:20:00 AM"
+    },
+    {
+      "id": 4,
+      "projectId": 2,
+      "location": "City Center Main Rd",
+      "status": "Offline",
+      "statusColor": "error",
+      "message": "Use alternate route. Heavy congestion.",
+      "chainage": "CH 3+750",
+      "type": "Mobile",
+      "zone": "Central",
+      "lastUpdated": "6:45:00 PM"
+    },
+    {
+      "id": 5,
+      "projectId": 2,
+      "location": "Market Junction",
+      "status": "Faulty",
+      "statusColor": "warning",
+      "message": "Accident ahead. Drive carefully.",
+      "chainage": "CH 5+100",
+      "type": "Mobile",
+      "zone": "Central",
+      "lastUpdated": "7:20:00 AM"
+    },
+    {
+      "id": 6,
+      "projectId": 3,
+      "location": "Eastern Exp Km 10",
+      "status": "Maintenance",
+      "statusColor": "info",
+      "message": "Drive safe. Follow speed limits.",
+      "chainage": "CH 10+300",
+      "type": "Fixed",
+      "zone": "East",
+      "lastUpdated": "2:10:00 PM"
+    },
+    {
+      "id": 7,
+      "projectId": 4,
+      "location": "Industrial Zone Entry",
+      "status": "online",
+      "statusColor": "success",
+      "message": "Truck lane closed. Use left lane.",
+      "chainage": "CH 2+800",
+      "type": "Fixed",
+      "zone": "South",
+      "lastUpdated": "10:05:00 AM"
+    },
+    {
+      "id": 8,
+      "projectId": 4,
+      "location": "Factory Road",
+      "status": "online",
+      "statusColor": "success",
+      "message": "No parking zone ahead.",
+      "chainage": "CH 4+150",
+      "type": "Mobile",
+      "zone": "South",
+      "lastUpdated": "9:45:00 AM"
+    }
+  ],
+  "analytics": {
+    "statusDistribution": [
+      { "name": "Online", "value": 0, "color": "#4caf50" },
+      { "name": "Offline", "value": 0, "color": "#f44336" },
+      { "name": "Faulty", "value": 0, "color": "#2196f3" },
+      { "name": "Maintenance", "value": 0, "color": "#ff9800" }
+    ],
+    "zoneDistribution": [
+      { "name": "North", "value": 0, "color": "#9c27b0" },
+      { "name": "South", "value": 0, "color": "#ff5722" },
+      { "name": "East", "value": 0, "color": "#ff9800" },
+      { "name": "Central", "value": 0, "color": "#009688" }
+    ]
+  }
+}
