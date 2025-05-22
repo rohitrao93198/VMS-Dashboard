@@ -18,4 +18,4 @@ Analytics Dashboard
 
 📁 Modular component-based structure
 
-live link of the project - 
+live link of the project - vms-dashboards.netlify.app
